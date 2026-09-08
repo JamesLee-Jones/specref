@@ -1,2 +1,4 @@
 # specref
-A lean library for linking definitions to specification documents
+
+A library for linking Lean definitions to specification documents.
+
