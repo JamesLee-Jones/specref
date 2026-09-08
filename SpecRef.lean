@@ -1,1 +1,3 @@
-import SpecRef.Basic
+import SpecRef.Spec
+import SpecRef.Cite
+import SpecRef.Report

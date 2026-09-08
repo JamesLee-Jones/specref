@@ -1,14 +1,20 @@
-name: Lean Action CI
+name: CI
 
 on:
   push:
+    branches: [main]
+    tags: ["v*"]
   pull_request:
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v5
+
+      # Install the toolchain in lean-toolchain, build the library and run
+      # `lake test`.
       - uses: leanprover/lean-action@v1
+        with:
+          test: true

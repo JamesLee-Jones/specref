@@ -1,6 +1,12 @@
 name = "specref"
 version = "0.1.0"
 defaultTargets = ["SpecRef"]
+testDriver = "SpecRefTests"
 
 [[lean_lib]]
 name = "SpecRef"
+
+# The tests, run by `lake test`. Library names are shared with every project that
+# depends on this one, so they carry the SpecRef prefix.
+[[lean_lib]]
+name = "SpecRefTests"
