@@ -1,10 +1,6 @@
 name = "specref"
 version = "0.1.0"
-defaultTargets = ["specref"]
+defaultTargets = ["SpecRef"]
 
 [[lean_lib]]
-name = "Specref"
-
-[[lean_exe]]
-name = "specref"
-root = "Main"
+name = "SpecRef"
