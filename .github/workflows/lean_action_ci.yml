@@ -18,3 +18,7 @@ jobs:
       - uses: leanprover/lean-action@v1
         with:
           test: true
+
+      # Make sure the example in the README still builds.
+      - name: Build the example
+        run: lake build SpecRefExamples
